@@ -1,6 +1,19 @@
 @import "../../../styles/variables.scss";
 
-main{           
+main{     
+    
+    @media (max-width: 768px) {
+        .logo-section {
+            display: none; /* Oculta a logo */
+        }
+    
+        .login-section {
+            width: 100%; /* Faz o formulário ocupar toda a tela */
+            max-width: 400px; /* Limita a largura do formulário */
+            margin: 5px;
+        }
+    }
+
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -26,6 +39,11 @@ main{
     .form-section{
         flex-grow: 0.3;   
         padding: 0 35px;
+
+        @media (max-width: 768px) {
+            flex-direction: column; /* Empilha os elementos no mobile */
+            align-items: center; /* Centraliza o form */
+          }
 
         img{
             margin-bottom: 30px;
