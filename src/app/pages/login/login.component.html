@@ -3,6 +3,7 @@
     description="Informe seus dados para efetuar o serviço que deseja ou cadastre-se, caso não possua uma conta no ba.gov.br."
     primaryBtnText="Entrar"
     secondaryBtnText="Cadastre-se"
+    (submit)="submit()"
 
 >    
     <form [formGroup]="loginForm">
@@ -10,8 +11,8 @@
             formControlName="email"
             inputName="email"
             type="email"
-            label="Email"
-            placeholder="email@email.com"
+            label="Email:"
+            placeholder="exemplo@gmail.com"
         >            
             <img src="assets/svg/email-icon.svg"/>
         </app-primary-inputs>
@@ -19,7 +20,7 @@
             formControlName="password"
             inputName="password"
             type="password"
-            label="Senha"
+            label="Senha:"
             placeholder="Sua Senha"
         >            
             <img src="assets/svg/password-icon.svg"/>
