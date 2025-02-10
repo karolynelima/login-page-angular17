@@ -1,7 +1,30 @@
 <app-default-login-layout
-    title="Login into your account"
-    primaryBtnText="Login now"
-    secondaryBtnText="Signup now"
+    title="Entre na sua conta"
+    description="Informe seus dados para efetuar o serviço que deseja ou cadastre-se, caso não possua uma conta no ba.gov.br."
+    primaryBtnText="Entrar"
+    secondaryBtnText="Cadastre-se"
 
 >    
+    <form [formGroup]="loginForm">
+        <app-primary-inputs
+            formControlName="email"
+            inputName="email"
+            type="email"
+            label="Email"
+            placeholder="email@email.com"
+        >            
+            <img src="assets/svg/email-icon.svg"/>
+        </app-primary-inputs>
+        <app-primary-inputs
+            formControlName="password"
+            inputName="password"
+            type="password"
+            label="Senha"
+            placeholder="Sua Senha"
+        >            
+            <img src="assets/svg/password-icon.svg"/>
+        </app-primary-inputs>
+        <span>Esqueceu a senha?</span>
+    </form>
+
 </app-default-login-layout>

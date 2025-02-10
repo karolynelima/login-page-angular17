@@ -34,9 +34,7 @@ main{
         h2{
             font-size: 20px;
             font-weight: bold;  
-            margin-bottom: 45px;    
-
-
+            margin-bottom: 45px;
         }
 
         .btn-wrapper {
@@ -50,7 +48,7 @@ main{
             .divider{
                 font-size: 14px;
                 display: flex;
-                color: $gray-bg;
+                color: gray;
                 font-weight: 400;
                 align-items: center;
                 justify-content: center;
@@ -72,16 +70,17 @@ main{
                 border: none;
                 background-color: transparent;
                 padding: 12px 24px;
+                cursor: pointer;
     
                 &.btn-primary{
-                    background-color: $primary-color;
+                    background-color: $secondary-color;
                     color:white;
-                    box-shadow: 0px 8px 12px rgba(255, 185, 64, 0.685);
+                    box-shadow: 0px 8px 12px rgba(54, 63, 187, 0.685);
                 }
                 
                 &.btn-secondary{
-                    border: 1px solid $primary-color;
-                    color:$primary-color;
+                    border: 1px solid $secondary-color;
+                    color:$secondary-color;
                 }
     
             }
