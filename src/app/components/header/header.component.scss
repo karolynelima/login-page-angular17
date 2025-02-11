@@ -1,0 +1,10 @@
+
+@import "../../../styles/variables.scss";
+.app-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color:$gray-secondary-bg;
+    flex-grow: 0.2;   
+    padding: 0 35px;
+}
