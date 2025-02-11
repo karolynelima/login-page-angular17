@@ -8,7 +8,6 @@ main{
     justify-content: center;
     height: 100vh; 
 
-    
     section{
         height: 100%;
         display: flex;
@@ -29,15 +28,38 @@ main{
     .form-section{
         flex-grow: 0.3;   
         padding: 0 35px;
+        padding: 12px 24px;
+        
 
         img{
             margin-bottom: 30px;
         }
         
         h2{
-            font-size: 20px;
+            display: flex;
+            text-align: center;
+            font-size: 25px;
             font-weight: bold;  
+            font-style:initial;
             margin-bottom: 45px;
+            filter: drop-shadow();
+            
+        }
+
+        .destacado {
+            //font-weight: bold;
+            //color: #ffffff; // Cor do texto
+            //background-color: #1e56a0; // Cor de fundo para destaque
+            //border-radius: 5px;
+            // padding: 10px;            
+            text-align: center;
+            display: inline-block;
+            line-height: 1.5;
+            max-width: 400px; // Ajuste conforme necessário
+            margin-bottom: 45px;
+            span {
+              display: block; // Quebra em três linhas
+            }
         }
 
         .btn-wrapper {

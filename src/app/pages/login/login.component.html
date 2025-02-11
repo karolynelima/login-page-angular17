@@ -1,7 +1,6 @@
 <app-header></app-header>
 <app-default-login-layout
     title="Entre na sua conta"
-    description="Informe seus dados para efetuar o serviço que deseja ou cadastre-se, caso não possua uma conta no ba.gov.br."
     primaryBtnText="Entrar"
     secondaryBtnText="Cadastre-se"
     (submit)="submit()"
@@ -24,11 +23,15 @@
             inputName="password"
             type="password"
             label="Senha:"
-            placeholder="Sua Senha"
+            placeholder="digite a senha"
         >            
             <img src="assets/svg/password-icon.svg"/>
-        </app-primary-inputs>
+        </app-primary-inputs> 
+        <div class="form-checkbox">
+            <input class="checkbox" type="checkbox" id="checkbox1">
+            <label for="checkbox1" tabindex="1">Manter conectado</label>
+        </div>       
         <span>Esqueceu a senha?</span>
-    </form>
-
+    </form>      
+        
 </app-default-login-layout>
